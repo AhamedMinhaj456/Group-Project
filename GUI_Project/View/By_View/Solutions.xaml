@@ -1,0 +1,61 @@
+﻿<Window x:Class="GUI_Project.Solutions"
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI_Project" WindowStyle="None"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="Videos" Height="670" Width="800" Background="Black">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="850"></ColumnDefinition>
+            <ColumnDefinition Width="400"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" HorizontalAlignment="Left"
+                        VerticalAlignment="Top" Margin="50,0,0,0" Height="829" Width="704">
+            <Canvas>
+                <TextBlock Text="Developed By :" Width="800" Height="100" FontWeight="Bold" Foreground="White" FontSize="50">
+
+
+                </TextBlock>
+
+                <Polygon Points="500,100 700,100 600,300" Fill="#FF7400BA" HorizontalAlignment="Left" Canvas.Left="23" VerticalAlignment="Top" Canvas.Top="-246"/>
+
+
+
+                <Polygon Points="400,400 600,400 500,600" Fill="#FF62039B" HorizontalAlignment="Left" Canvas.Top="-246" VerticalAlignment="Top" Canvas.Left="150" />
+
+                <Polygon Points="200,100 400,100 300,300" Fill="#809A24F9" HorizontalAlignment="Left" VerticalAlignment="Top" Height="300" Canvas.Left="150" Canvas.Top="-341" />
+
+                <Polygon Points="600,200 800,200 700,400"  HorizontalAlignment="Left" Canvas.Top="-246" VerticalAlignment="Top" Fill="#FF7009CF" Canvas.Left="50" Width="743" />
+
+                <Polygon Points="300,300 500,300 400,500" Fill="#80490B51" Canvas.Left="140" Canvas.Top="-46" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+                <Polygon Points="700,400 900,400 800,600" Fill="#8049055E" Canvas.Left="10" Canvas.Top="-246" HorizontalAlignment="Left" VerticalAlignment="Top" Width="868" Height="555" />
+
+                <Polygon Points="400,200 600,200 500,400" Fill="#80451656" Canvas.Top="-200" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            </Canvas>
+            <WrapPanel Height="545" Width="671">
+                <WrapPanel Margin="30 100 0 0" Width="800" Height="600">
+                    <TextBlock TextWrapping="Wrap" Width="620" TextAlignment="Justify"
+                FontSize="30" Foreground="White"  Margin="100 10"
+           
+           Height="634"
+           Text="Minhaj M.H.A &#x0a;EG/2020/4076 &#x0a; &#x0a;&#x0a;
+Morais M.N.S &#x0a;
+EG/2020/4077 &#x0a;
+ " />
+
+
+                </WrapPanel>
+
+            </WrapPanel>
+            <Button Content="Main Menu" Click="Main_Menu" Style="{StaticResource Button}"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
+
+
+
+

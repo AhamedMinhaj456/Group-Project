@@ -1,0 +1,20 @@
+﻿GUI_Project
+1.0.0.0
+
+winexe
+C#
+.cs
+C:\Users\Computer Solution\Desktop\GUI_Project _New\GUI_Project\GUI_Project\obj\Debug\net6.0-windows\
+GUI_Project
+none
+false
+TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+C:\Users\Computer Solution\Desktop\GUI_Project _New\GUI_Project\GUI_Project\App.xaml
+321642663886
+
+67-220279915
+219969057771
+MainWindow.xaml;Pages\AddDoctorPage.xaml;Pages\AddMedicinePage.xaml;Pages\AddStaffPage.xaml;Pages\AddTestPage.xaml;Pages\AdmitpatientPage.xaml;Pages\PatientDetails.xaml;Pages\Pharmacy.xaml;Pages\ReleasePatientPage.xaml;Pages\SupplierPage.xaml;Pages\UpdateDeleteDoctorPage.xaml;Pages\UpdateDeleteStaffPage.xaml;Registration User Control\myOption.xaml;Registration User Control\My_Text_Box.xaml;SplashScreen.xaml;View\AdminWindow.xaml;View\Admin_Control.xaml;View\Admin_Login.xaml;View\By_View\AboutUs.xaml;View\By_View\Features.xaml;View\By_View\Services.xaml;View\By_View\Solutions.xaml;View\CreateAdmin.xaml;View\CreateUser.xaml;View\DoctorWindow.xaml;View\Log_In.xaml;View\MedicineWindow.xaml;View\Patient_Details.xaml;View\Print_Screen.xaml;View\Registration.xaml;View\Registration_2.xaml;View\StaffWindow.xaml;
+
+True
+

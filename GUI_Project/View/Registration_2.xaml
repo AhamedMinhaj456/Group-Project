@@ -1,0 +1,185 @@
+﻿<Window x:Class="GUI_Project.Registration_2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI_Project"
+        xmlns:VM="clr-namespace:GUI_Project.ViewModel"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
+        xmlns:uc="clr-namespace:GUI_Project.Registration_User_Control"
+        mc:Ignorable="d" WindowStyle="None" AllowsTransparency="False" 
+        WindowStartupLocation="CenterScreen" Background="Transparent"
+        Title="Registration_2" Height="700" Width="1000"
+        MouseMove="Window_MouseMove">
+    <!--<Window.DataContext>
+        <VM:RegistraionVM/>
+    </Window.DataContext>-->
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="350"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--left Section-->
+            <Border Background="#ffd500" Padding="30" >
+                <Grid>
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 10 0 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="150"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Grid.Row="0" Text="Name" Style="{StaticResource Text}"/>
+                        <TextBlock Grid.Row="1" Text="Address" Style="{StaticResource Text}"/>
+                        <TextBlock Grid.Row="2" Text="Gender" Style="{StaticResource Text}"/>
+                        <TextBlock Grid.Row="3" Text="Date Of Birth" Style="{StaticResource Text}"/>
+                        <TextBlock Grid.Row="4" Text="Email" Style="{StaticResource Text}"/>
+                        <TextBlock Grid.Row="5" Text="Mobile" Style="{StaticResource Text}"/>
+                        <TextBlock Grid.Row="6" Text="Membership" Style="{StaticResource Text}"/>
+
+                        <uc:My_Text_Box Grid.Column="1" Grid.Row="0" Hint="Jhon"  >
+                            <TextBox Text="{Binding Name}"/>
+                        </uc:My_Text_Box>
+                        <uc:My_Text_Box Grid.Column="1" Grid.Row="1" Hint="Charles">
+                            <TextBox Text="{Binding Address}"/>
+                        </uc:My_Text_Box>
+                        <uc:My_Text_Box Grid.Column="1" Grid.Row="3" Hint="01/02/2000">
+                            <!--<TextBox Text="{Binding DOB}"/>-->
+                            <TextBox Text="{Binding DOB, UpdateSourceTrigger=PropertyChanged, StringFormat={}{0:dd/MM/yyyy}}" />
+                        </uc:My_Text_Box>
+                        <uc:My_Text_Box Grid.Column="1" Grid.Row="4" Hint="JhonCharles@net.com">
+                            <TextBox Text="{Binding Email}"/>
+                        </uc:My_Text_Box>
+                        <uc:My_Text_Box Grid.Column="1" Grid.Row="5" Hint="+94-07xxxxxxxx">
+                            <TextBox Text="{Binding Mobile}"/>
+                        </uc:My_Text_Box>
+
+                        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2" Margin="0 10" >
+                            <uc:myOption Icon="Male" Text="Male"/>
+                            <uc:myOption Icon="Female" Text="Female"/>
+
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal"  Grid.Column="1" Grid.Row="6" Margin="0 10" >
+                            <uc:myOption Icon="CreditCard" Text="Classic" />
+                            <uc:myOption Icon="CreditCard" Text="Silver"/>
+                            <uc:myOption Icon="CreditCard" Text="Gold"/>
+
+                        </StackPanel>
+
+                        <Grid Grid.Column="1" Grid.Row="7" Margin="0 40 0 0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Border>
+
+            <!--Input Section-->
+            <Border Grid.Column="1" Padding="20" Background="#FFFFFF" MouseDown="Border_MouseDown">
+                <Grid>
+                    <Image MouseDown="Image_MouseDown" Source="/image/close.png"  Width="15" Margin="0 4 5 0" Style="{StaticResource iconApp}" />
+                    <Image MouseDown="Image_MouseDown_1" Source="/image/Maximise.png" Width="15" Margin="0 25 5 0" Style="{StaticResource iconApp}" />
+                    <Image MouseDown="Image_MouseDown_2" Source="/image/minimise.png" Width="15" Margin="0 50 5 0"  Style="{StaticResource iconApp}"/>
+
+
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 10 0 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="150"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Grid.Row="0" Text="Admitted date" Style="{StaticResource Text}"/>
+                        <TextBlock Grid.Row="1" Text="Discharged Date" Style="{StaticResource Text}"/>
+                        <TextBlock Grid.Row="2" Text="Ward No" Style="{StaticResource Text}"/>
+                        <TextBlock Grid.Row="3" Text="Room No" Style="{StaticResource Text}"/>
+                        <TextBlock Grid.Row="4" Text="Doctor In Charge" Style="{StaticResource Text}"/>
+                        <TextBlock Grid.Row="5" Text="Disease" Style="{StaticResource Text}"/>
+                        <TextBlock Grid.Row="6" Text="Doctor Note" Style="{StaticResource Text}"/>
+
+                        <uc:My_Text_Box x:Name="txtAdmitteddare" Grid.Column="1" Grid.Row="0"   >
+                            <TextBox />
+                        </uc:My_Text_Box>
+                        <uc:My_Text_Box x:Name="txtDischargedDate" Grid.Column="1" Grid.Row="1" >
+                            
+                        </uc:My_Text_Box>
+                        <uc:My_Text_Box x:Name="txtWardNo" Grid.Column="1" Grid.Row="2" >
+                        </uc:My_Text_Box>
+                        <uc:My_Text_Box x:Name="txtRoomNo" Grid.Column="1" Grid.Row="3" >
+                        </uc:My_Text_Box>
+                        <uc:My_Text_Box x:Name="txtDIC" Grid.Column="1" Grid.Row="4" >
+
+                        </uc:My_Text_Box>
+                        <uc:My_Text_Box x:Name="txtDisease" Grid.Column="1" Grid.Row="5" >
+
+                        </uc:My_Text_Box>
+                        <uc:My_Text_Box x:Name="txtDrNote" Grid.Column="1" Grid.Row="6" >
+
+                        </uc:My_Text_Box>
+
+
+
+                        <Grid Grid.Column="1" Grid.Row="7" Margin="0 40 0 0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Button Content="Previous Page"  Click="Previous_Page" Margin="0 0 10 0" Style="{StaticResource ButtonMain}"/>
+                            <Button Content="Save" Width="90" Click="Save" Margin="10,0,0,0" Grid.Column="1" Style="{StaticResource buttonMainGreen}" Height="50" VerticalAlignment="Top"/>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Border>
+        </Grid>
+
+
+        <!--Bottom Section-->
+        <Border Grid.Row="1" BorderThickness="0 2 0 0" BorderBrush="#E2E9E9" CornerRadius="0 0 5 5 " Padding="0" Background="White">
+            <Grid>
+                <!--Copy Right Text-->
+                <TextBlock Text="Copyright © 2023 . All Right Reserved" Margin="15 0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="13"
+                       Foreground="#909098" />
+
+                <!--Menu Buttons-->
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <Button Content="Home" Click="Home_Window" Style="{StaticResource bottomButton}"/>
+                    <Button Content="Features" Style="{StaticResource bottomButton}"/>
+                    <Button Content="Solutions" Style="{StaticResource bottomButton}"/>
+                    <Button Content="Videos" Style="{StaticResource bottomButton}"/>
+                    <Button Content=" About Us" Style="{StaticResource bottomButton}"/>
+                    <Button Content="Log In" Style="{StaticResource bottomButton}" Foreground="#FF131E"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

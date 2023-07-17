@@ -1,0 +1,126 @@
+﻿<Window x:Class="GUI_Project.Log_In"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI_Project"
+        xmlns:VM="clr-namespace:GUI_Project.ViewModel"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True"
+        Title="Log_In" Height="550" Width="800">
+    <!--<Window.DataContext>
+        <VM:CreateAdminVM/>
+    </Window.DataContext>-->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="1.5*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border CornerRadius="10 0 0 10">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0 0" EndPoint="1 1">
+                        <GradientStop Color="Blue" Offset="0"/>
+                        <GradientStop Color="Green" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid>
+                    <Canvas>
+                        <Polygon Points="0,20 230,140 0,270" Fill="#4EB1E6" Opacity="0.5"/>
+                        <Polygon Points="100,400 200,370 180,470" Fill="#4EB1E6" Opacity="0.2"/>
+                        <Ellipse Margin="250 450 0 0" Width="40" Height="40" Fill="#4EB1E6" Opacity="0.5"/>
+                        <Ellipse Margin="50 400 0 0" Width="20" Height="20" Fill="#4EB1E6" Opacity="0.2"/>
+                    </Canvas>
+                    <StackPanel VerticalAlignment="Center">
+                        <TextBlock Text="Log in as Staff" FontSize="20" Style="{StaticResource TitleText}"/>
+                        <TextBlock Text="Connect With Us &#x0a;Contact Board If You Forget &#x0a; Your Account Password" Style="{StaticResource normalText}" Opacity="0.8" Margin="20 30"/>
+                        <Button Content="Main Menu" Click="Main_Menu" Style="{StaticResource Button}"/>
+                    </StackPanel>
+                </Grid>
+        </Border>
+
+            <!--Right Section-->
+            <Border Background="#FFFFFF" Grid.Column="1" CornerRadius="0 10 10 0" MouseDown="Border_MouseDown">
+                <StackPanel>
+                    <Image MouseDown="Image_MouseDown" Source="/image/close.png"  Width="15" Margin="0 4 5 0" Style="{StaticResource iconApp}" />
+                    <Image MouseDown="Image_MouseDown_1" Source="/image/Maximise.png" Width="15" Margin="0 0 5 0" Style="{StaticResource iconApp}" />
+                    <Image MouseDown="Image_MouseDown_2" Source="/image/minimise.png" Width="15" Margin="0 0 5 0"  Style="{StaticResource iconApp}"/>
+                    <TextBlock Margin="0 -20 0 40" Text="Log in as Admin" Style="{StaticResource TitleText}" Foreground="#3AB198"/>
+
+                    <Border BorderThickness="1" BorderBrush="#abc0af" Margin="70 7" CornerRadius="5">
+                        <Grid Margin="7 9">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <!--User Name Password Boxes-->
+
+                            <Image Source="/image/Email.png" Width="20" Height="20"/>
+                            <TextBlock  x:Name="textEmail" MouseDown="textEmail_MouseDown" Text="Admin Name" Style="{StaticResource textHint}"/>
+                            <TextBox Text="{Binding TxtEmail}" x:Name="txtAdminLoginName" TextChanged="txtEmail_TextChanged" Cursor="IBeam" Style="{StaticResource textBox}"/>
+                        </Grid>
+                    </Border>
+
+                    <Border BorderThickness="1" BorderBrush="#abc0af" Margin="70 7" CornerRadius="5">
+                        <Grid Margin="7 9">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Source="/image/Lock.png" Width="20" Height="20"/>
+                            <TextBlock  x:Name="textPassword" MouseDown="textPassword_MouseDown" Text="Password" Style="{StaticResource textHint}"/>
+                            <PasswordBox local:PasswordBoxAssistant.BindPassword="{Binding adminPassword, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                                x:Name="txtAdminLoginPassword" PasswordChanged="txtPassword_PasswordChanged" Cursor="IBeam" Style="{StaticResource textBox}"/>
+                        </Grid>
+                    </Border>
+
+                    <Button Content="Admin Log In"   Style="{StaticResource mainButton}" Click="Admin_Login"/>
+
+                    <!--Social media Image section-->
+
+                    <TextBlock  Text="Connect with us using Social media " Style="{StaticResource normalText}" Foreground="#878787" Margin="0 30 0 15"/>
+
+                    <StackPanel Orientation="Horizontal" Margin="0 0" HorizontalAlignment="Center">
+
+                        <Button  Style="{StaticResource ButtonCircle}" >
+                            
+                            <Image  Source="/image/Google.png" Width="20" Height="20"/>
+                        </Button>
+                        <Button Style="{StaticResource ButtonCircle}">
+                            <Image Source="/image/Facebook.png" Width="20"  Height="20"/>
+                        </Button>
+                        <Button Style="{StaticResource ButtonCircle}">
+                            <Image  Source="/image/Linked In.png" Width="20" Height="20"/>
+                        </Button>
+                    </StackPanel>
+
+                </StackPanel>
+            </Border>
+
+        </Grid>
+        <!--Bottom Section-->
+        <Border Grid.Row="1" BorderThickness="0 2 0 0" BorderBrush="#E2E9E9" CornerRadius="0 0 5 5 " Padding="0" Background="White">
+            <Grid>
+                <!--Copy Right Text-->
+                <TextBlock Text="Copyright © 2023 . All Right Reserved" Margin="15 0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="13"
+                       Foreground="#909098" />
+
+                <!--Menu Buttons-->
+                <StackPanel Orientation="Horizontal" Margin="10 0 0 0"  VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <Button Content="Home" Click="Home" Style="{StaticResource bottomButton}"/>
+                    <Button Content="Features" Click="Features" Style="{StaticResource bottomButton}"/>
+                    <Button Content="Services" Click="Services" Style="{StaticResource bottomButton}"/>
+                    <Button Content=" About Us" Click="AboutUs" Style="{StaticResource bottomButton}"/>
+                    <Button Content="Developed By" Click="Devoleped_By" Style="{StaticResource bottomButton}" Foreground="#FF131E"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
+ 

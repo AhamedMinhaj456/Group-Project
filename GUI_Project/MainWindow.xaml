@@ -1,0 +1,72 @@
+﻿<Window x:Class="GUI_Project.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI_Project"
+        mc:Ignorable="d" WindowStyle="None" ResizeMode="CanMinimize" Background="Black" AllowsTransparency="True" 
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="480" Width="800" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+            <Grid>
+                <Grid.Background>
+                    <ImageBrush ImageSource="/image/hospital.png" Opacity="0.7"/>
+                </Grid.Background>
+            </Grid>
+            <Border  BorderThickness="20" BorderBrush="#FFC71585">
+
+                <StackPanel  Orientation="Vertical" Margin="200 0 0 0 "  >
+                    <Image MouseDown="Image_MouseDown" Source="/image/close.png"  Width="15" Margin="0 4 5 0" Style="{StaticResource iconApp}" />
+                    <Image MouseDown="Image_MouseDown_1" Source="/image/Maximise.png" Width="15" Margin="0 0 5 0" Style="{StaticResource iconApp}" />
+                    <Image MouseDown="Image_MouseDown_2" Source="/image/minimise.png" Width="15" Margin="0 0 5 0"  Style="{StaticResource iconApp}"/>
+
+                    
+                    <TextBlock Opacity="1" Margin="80 00 0 0" Text="Welcome To Patient &#x0a;         Registration System" 
+                       FontSize="35" FontWeight="Bold" Foreground="yellow"/>
+
+
+
+                    <Button Content="Welcome"  Background="White" Foreground="red" 
+                        FontWeight="Bold" Style="{StaticResource button1}" Click="Button_Click" Margin="10 100 0 0"
+                         />
+
+                    <Button Content="Exit" Background="#FF48D1CC" Foreground="red" 
+                        FontWeight="Bold" Style="{StaticResource button1}" Click="Button_Click_1" Margin="10 00 0 0"
+                         />
+
+                
+
+            </StackPanel>
+            </Border>
+
+            <StackPanel Orientation="Horizontal" Width="250" HorizontalAlignment="Left"
+                 Opacity="0.5"  Background="#FF00FF07">
+
+            </StackPanel>
+       
+
+        <!--Bottom Section-->
+        <Border Grid.Row="1" BorderThickness="0 2 0 0" BorderBrush="#E2E9E9" CornerRadius="0 0 5 5 "  Padding="0" Background="White">
+            <Grid>
+                <!--Copy Right Text-->
+                <TextBlock Text="Copyright © 2023 . All Right Reserved" Margin="15 0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="13"
+                       Foreground="#909098" />
+
+                <!--Menu Buttons-->
+                <StackPanel Orientation="Horizontal" Margin="10 0 0 0"  VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <Button Content="Home" Click="Home" Style="{StaticResource bottomButton}"/>
+                    <Button Content="Features" Click="Features" Style="{StaticResource bottomButton}"/>
+                    <Button Content="Services" Click="Services" Style="{StaticResource bottomButton}"/>
+                    <Button Content=" About Us" Click="AboutUs" Style="{StaticResource bottomButton}"/>
+                    <Button Content="Developed By" Click="Devoleped_By" Style="{StaticResource bottomButton}" Foreground="#FF131E"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+    </Grid>
+</Window>

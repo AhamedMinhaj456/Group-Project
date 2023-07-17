@@ -1,0 +1,71 @@
+﻿<Window x:Class="GUI_Project.AboutUs"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI_Project"
+        mc:Ignorable="d" WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        Title="Videos" Height="760" Width="800" Background="Black">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="850"></ColumnDefinition>
+            <ColumnDefinition Width="400"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" HorizontalAlignment="Left"
+                        VerticalAlignment="Top" Margin="50,0,0,0" Height="814" Width="678">
+            <Canvas>
+                <TextBlock Text="About Us" Width="800" Height="100" FontWeight="Bold" Foreground="White" FontSize="50">
+
+
+                </TextBlock>
+
+                <Polygon Points="500,100 700,100 600,300" Fill="#FF7400BA" HorizontalAlignment="Left" Canvas.Left="23" VerticalAlignment="Top" Canvas.Top="-246"/>
+
+
+
+                <Polygon Points="400,400 600,400 500,600" Fill="#FF62039B" HorizontalAlignment="Left" Canvas.Top="-246" VerticalAlignment="Top" Canvas.Left="150" />
+
+                <Polygon Points="200,100 400,100 300,300" Fill="#809A24F9" HorizontalAlignment="Left" VerticalAlignment="Top" Height="300" Canvas.Left="150" Canvas.Top="-341" />
+
+                <Polygon Points="600,200 800,200 700,400"  HorizontalAlignment="Left" Canvas.Top="-246" VerticalAlignment="Top" Fill="#FF7009CF" Canvas.Left="50" Width="743" />
+
+                <Polygon Points="300,300 500,300 400,500" Fill="#80490B51" Canvas.Left="140" Canvas.Top="-46" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+                <Polygon Points="700,400 900,400 800,600" Fill="#8049055E" Canvas.Left="10" Canvas.Top="-246" HorizontalAlignment="Left" VerticalAlignment="Top" Width="868" Height="555" />
+
+                <Polygon Points="400,200 600,200 500,400" Fill="#80451656" Canvas.Top="-200" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+                <Polygon Points="500,400 700,400 600,600" Fill="#80662EA3" Canvas.Left="150" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="-36" />
+            </Canvas>
+            <WrapPanel Height="671" Width="660">
+                <WrapPanel Margin="20 100 0 0" Width="800" Height="600">
+                    <TextBlock TextWrapping="Wrap" Width="593" TextAlignment="Justify"
+                FontSize="20" Foreground="White" 
+           
+           Height="600" 
+           Text="ABOUT LANKA HOSPITALS
+                               
+                               &#x0a;&#x0a;
+Our History &#x0a;
+Our Hospitals Corporation PLC commenced operations in 
+                               Sri Lanka on 7th June 2002, under the brand name of Apollo Hospitals, a part of the chain of Apollo Hospitals founded by the renown Dr. Pratap C. Reddy in India. As the only purpose built private hospital of its kind in Sri Lanka, Apollo Colombo revolutionised Sri Lanka’s healthcare service, and today under the brand Lanka Hospitals, we continue to dominate and lead the healthcare sector. Ours is still considered to be the best health care facility in the country.&#x0a;
+
+In 2012, we celebrated a decade of excellence in healthcare. Over the past decade, Lanka Hospitals has revolutionized the healthcare industry in Sri Lanka through infrastructure development and advancement of its’ product and services, through sizeable investments, with a view to deliver healthcare that is on par with global developments in medical technology. We also play a critical role in the nation’s strategy to provide to provide world-class medical care whilst balancing the equation of affordability and accessibility for all Sri Lankans. " />
+
+
+                </WrapPanel>
+
+            </WrapPanel>
+            <Button Content="Main Menu" Click="Main_Menu" Style="{StaticResource Button}"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" >
+
+
+        </StackPanel>
+
+    </Grid>
+</Window>
+
+

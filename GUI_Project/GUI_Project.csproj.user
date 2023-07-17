@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Pages\UpdateDeleteDoctorPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\UpdateDeleteStaffPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\By_View\AboutUs.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\By_View\Features.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\AddDoctorPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\AddMedicinePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\AddStaffPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\AddTestPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\AdmitpatientPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\PatientDetails.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Pharmacy.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\ReleasePatientPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\SupplierPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\By_View\Solutions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SplashScreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\By_View\Services.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AdminWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Admin_Control.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Admin_Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\DoctorWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Log_In.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\MedicineWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Patient_Details.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Print_Screen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Registration User Control\myOption.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Registration User Control\My_Text_Box.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Registration.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Registration_2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CreateAdmin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CreateUser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\StaffWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Pages\UpdateDeleteDoctorPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\UpdateDeleteStaffPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\By_View\AboutUs.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\By_View\Features.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\AddDoctorPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\AddMedicinePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\AddStaffPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\AddTestPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\AdmitpatientPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PatientDetails.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Pharmacy.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ReleasePatientPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\SupplierPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\By_View\Solutions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SplashScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\By_View\Services.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AdminWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Admin_Control.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Admin_Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DoctorWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Log_In.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MedicineWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Patient_Details.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Print_Screen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Registration User Control\myOption.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Registration User Control\My_Text_Box.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Registration.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Registration_2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CreateAdmin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CreateUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\StaffWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
